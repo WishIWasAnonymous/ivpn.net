@@ -1,3 +1,4 @@
+Please look at threat 3a below. This is "threat model" that I think is the concern of many, including me. Can you address items 2/3/4 of the suggested section?
 ---
 title: Will a VPN Protect Me? Defining Your Threat Model
 author: mirimir (gpg key 0x17C2E43E)
@@ -43,6 +44,11 @@ We begin by considering threat models that are typical among prospective users o
 2. Any reputable VPN service would hide the user's ISP-assigned IP address from websites. In order to prevent association with prior activity under their true name, the user should work in a fresh device (or virtual machine) with no such prior usage on any website.
 3. When a user is connecting through a VPN service, websites see the IP address of the exit server, rather than the user's ISP-assigned IP address. Working in a fresh device or virtual machine, there are no cookies or other tracking objects that might be associated with the user's true name, or other aspects of their prior activity.
 4. It's not prudent to rely on browser settings (such as private browsing mode) or plugins to prevent tracking, because that protects only against known tracking methods. Even the Tor browser is vulnerable to new (aka zero-day) tracking exploits. Relying on isolation between different browsers is also risky. While virtual machines can also be compromised, there is little risk, except for high-value targets. Where the stakes are high, using dedicated devices would be most prudent.
+
+### 3A. Hiding Location and Identity from Websites, to avoid living in an internet bubble
+
+1. Similar to item 3, someone wishes to browse the web without websites using past browsing to feed them advertisements, suggested news, click-bait, etc. based on past browsing, news that has been read, their physical location, assumptions of their political stand on current topics, etc. The person wishes to avoid living in a bubble, so that a visit to the web appears a fresh discovery of information. To accomplish this, one needs some level of annymity.
+2. The appropriate response to this concern is ..... ?? (A reputable VPN partially addresses this, but an appropriate anti-tracker approach is not clear. There are numerous sources of "anti-tracking" packages that can be included in browsing software, but they are typically presented in a black box fashion by the developers that leaves details vague to to the uniformed person.) 
 
 ### 4. Hiding True Name from a Correspondent
 
